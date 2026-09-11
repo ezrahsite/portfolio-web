@@ -77,7 +77,7 @@ export default function PortfolioSite() {
       {/* Navigation */}
       <nav className="fixed w-full bg-white/95 backdrop-blur border-b border-gray-200 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-blue-600">DevWeb MTL</div>
+          <div className="text-xl font-bold text-blue-600">Ezrah site</div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
@@ -106,7 +106,7 @@ export default function PortfolioSite() {
       <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-50 via-white to-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Basé à Montréal 🍁
+            Basé au Québec 🍁
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Sites web rapides<br />pour ton business
@@ -251,7 +251,7 @@ export default function PortfolioSite() {
 
           <div className="mt-8 pt-8 border-t border-gray-200 text-center text-gray-600">
             <p className="mb-2">Ou écris directement:</p>
-            <a href="mailto:hello@devweb.com" className="text-blue-600 font-medium hover:underline">hello@devweb.com</a>
+            <a href="mailto:ezrahsiteofficiel.com" className="text-blue-600 font-medium hover:underline">hello@devweb.com</a>
           </div>
         </div>
       </section>
@@ -259,7 +259,7 @@ export default function PortfolioSite() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8 px-4 text-center text-sm">
         <div className="max-w-4xl mx-auto">
-          <p>© 2026 DevWeb MTL - Sites web pour petits business à Montréal</p>
+          <p>© 2026 DevWeb MTL - Sites web pour petits business au Québec </p>
         </div>
       </footer>
     </div>
