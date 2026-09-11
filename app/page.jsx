@@ -251,7 +251,7 @@ export default function PortfolioSite() {
 
           <div className="mt-8 pt-8 border-t border-gray-200 text-center text-gray-600">
             <p className="mb-2">Ou écris directement:</p>
-            <a href="mailto:ezrahsiteofficiel.com" className="text-blue-600 font-medium hover:underline">hello@devweb.com</a>
+            <a href="mailto:ezrahsiteofficiel@gmail.com" className="text-blue-600 font-medium hover:underline">ezrahsiteofficiel@gmail.com</a>
           </div>
         </div>
       </section>
