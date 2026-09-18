@@ -77,7 +77,11 @@ export default function PortfolioSite() {
       {/* Navigation */}
       <nav className="fixed w-full bg-white/95 backdrop-blur border-b border-gray-200 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-blue-600">Ezrah site</div>
+          <img 
+  src="/logo-ezrah-robot.svg" 
+  alt="Ezrah Logo" 
+  className="h-10 w-10"
+/>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
@@ -259,7 +263,7 @@ export default function PortfolioSite() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8 px-4 text-center text-sm">
         <div className="max-w-4xl mx-auto">
-          <p>© 2026 DevWeb MTL - Sites web pour petits business au Québec </p>
+          <p>© 2026 Ezarh Sites - Sites web pour petits business au Québec </p>
         </div>
       </footer>
     </div>
