@@ -77,14 +77,13 @@ export default function PortfolioSite() {
       {/* Navigation */}
       <nav className="fixed w-full bg-white/95 backdrop-blur border-b border-gray-200 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold text-blue-600">Ezrah Sites</div> 
-  
+          <div className="text-xl font-bold text-orange-500">Ezrah Site</div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
-            <a href="#services" className="text-sm text-gray-700 hover:text-blue-600 transition">Services</a>
-            <a href="#projects" className="text-sm text-gray-700 hover:text-blue-600 transition">Projets</a>
-            <a href="#contact" className="text-sm text-gray-700 hover:text-blue-600 transition">Contact</a>
+            <a href="#services" className="text-sm text-gray-700 hover:text-orange-500 transition">Services</a>
+            <a href="#projects" className="text-sm text-gray-700 hover:text-orange-500 transition">Projets</a>
+            <a href="#contact" className="text-sm text-gray-700 hover:text-orange-500 transition">Contact</a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -96,9 +95,9 @@ export default function PortfolioSite() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 py-4 px-4 space-y-3">
-            <a href="#services" className="block text-sm text-gray-700 hover:text-blue-600">Services</a>
-            <a href="#projects" className="block text-sm text-gray-700 hover:text-blue-600">Projets</a>
-            <a href="#contact" className="block text-sm text-gray-700 hover:text-blue-600">Contact</a>
+            <a href="#services" className="block text-sm text-gray-700 hover:text-orange-500">Services</a>
+            <a href="#projects" className="block text-sm text-gray-700 hover:text-orange-500">Projets</a>
+            <a href="#contact" className="block text-sm text-gray-700 hover:text-orange-500">Contact</a>
           </div>
         )}
       </nav>
@@ -116,10 +115,10 @@ export default function PortfolioSite() {
             Tu as un commerce, un service ou une petite entreprise? Je crée des sites web modernes, rapides et abordables pour attirer des clients.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#contact" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition flex items-center gap-2">
+            <a href="#contact" className="bg-orange-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition flex items-center gap-2">
               Commencer <ArrowRight size={20} />
             </a>
-            <a href="#projects" className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:border-blue-600 hover:text-blue-600 transition">
+            <a href="#projects" className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:border-orange-500 hover:text-orange-500 transition">
               Voir les projets
             </a>
           </div>
@@ -134,7 +133,7 @@ export default function PortfolioSite() {
             {services.map((service, i) => (
               <div key={i} className="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{service.title}</h3>
-                <div className="text-3xl font-bold text-blue-600 mb-6">{service.price}</div>
+                <div className="text-3xl font-bold text-orange-500 mb-6">{service.price}</div>
                 <ul className="space-y-3">
                   {service.features.map((feature, j) => (
                     <li key={j} className="flex gap-3 text-gray-700">
@@ -157,7 +156,7 @@ export default function PortfolioSite() {
             {projects.map((project, i) => (
               <div key={i} className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition">
                 <div className="text-5xl mb-4">{project.image}</div>
-                <div className="text-sm text-blue-600 font-medium mb-2">{project.category}</div>
+                <div className="text-sm text-orange-500 font-medium mb-2">{project.category}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.name}</h3>
                 <p className="text-gray-600">{project.description}</p>
               </div>
@@ -188,7 +187,7 @@ export default function PortfolioSite() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-blue-600">
+      <section className="py-20 px-4 bg-orange-500">
         <div className="max-w-3xl mx-auto text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Prêt à lancer ton site?</h2>
           <p className="text-lg mb-8 opacity-90">Ecris-moi un message, on discute de ton projet et je te fais une offre.</p>
@@ -215,7 +214,7 @@ export default function PortfolioSite() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                   placeholder="Ton nom"
                 />
               </div>
@@ -226,7 +225,7 @@ export default function PortfolioSite() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                   placeholder="toi@example.com"
                 />
               </div>
@@ -237,13 +236,13 @@ export default function PortfolioSite() {
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
                   rows="5"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                   placeholder="Décris ton projet..."
                 />
               </div>
               <button 
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition flex items-center justify-center gap-2"
+                className="w-full bg-orange-500 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition flex items-center justify-center gap-2"
               >
                 <Mail size={20} /> Envoyer
               </button>
@@ -252,7 +251,7 @@ export default function PortfolioSite() {
 
           <div className="mt-8 pt-8 border-t border-gray-200 text-center text-gray-600">
             <p className="mb-2">Ou écris directement:</p>
-            <a href="mailto:ezrahsiteofficiel@gmail.com" className="text-blue-600 font-medium hover:underline">ezrahsiteofficiel@gmail.com</a>
+            <a href="mailto:ezrahsiteofficiel@gmail.com" className="text-orange-500 font-medium hover:underline">ezrahsiteofficiel@gmail.com</a>
           </div>
         </div>
       </section>
@@ -260,7 +259,7 @@ export default function PortfolioSite() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8 px-4 text-center text-sm">
         <div className="max-w-4xl mx-auto">
-          <p>© 2026 Ezarh Sites - Sites web pour petits business au Québec </p>
+          <p>© 2026 Ezrah  Site - Sites web pour petits business</p>
         </div>
       </footer>
     </div>
