@@ -77,11 +77,8 @@ export default function PortfolioSite() {
       {/* Navigation */}
       <nav className="fixed w-full bg-white/95 backdrop-blur border-b border-gray-200 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <img 
-  src="/logo-ezrah-robot.svg" 
-  alt="Ezrah Logo" 
-  className="h-10 w-10"
-/>
+          <div className="text-xl font-bold text-blue-600">DevWeb MTL</div> 
+  
           
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
